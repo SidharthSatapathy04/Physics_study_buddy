@@ -1,6 +1,6 @@
 # Physics Study Buddy — Agentic AI Capstone Project
 
-## 🎓 Overview
+##  Overview
 
 **Physics Study Buddy** is a production-ready Agentic AI system for B.Tech physics tutoring. It combines LangGraph, ChromaDB, Groq LLM, and Streamlit to provide students with:
 
@@ -10,7 +10,7 @@
 - ✅ **Faithfulness Evaluation**: LLM-based quality scoring with retry logic
 - ✅ **Streamlit UI**: production-grade dark-themed chat interface
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌────────────────────────┐
@@ -35,7 +35,7 @@
       └──────────┘    └──────────────┘
 ```
 
-## 📦 Project Structure
+##  Project Structure
 
 ```
 physics_study_buddy/
@@ -62,7 +62,7 @@ physics_study_buddy/
                               # (9 sections: domain → evaluation → deployment)
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Installation
 
@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ### 2. Configuration
 
-**⚠️ IMPORTANT: API Key Setup Required**
+** IMPORTANT: API Key Setup Required**
 
 ```bash
 # 1. Get a free Groq API key
@@ -101,9 +101,9 @@ echo $GROQ_API_KEY       # Linux/Mac
 ```
 
 **Demo Mode**: If no valid API key is provided, the app will:
-- ✅ Show retrieved documents from the knowledge base
-- ✅ Show topic sources for each query
-- ❌ Fail to generate LLM answers (requires valid Groq API key)
+-  Show retrieved documents from the knowledge base
+-  Show topic sources for each query
+-  Fail to generate LLM answers (requires valid Groq API key)
 
 ### 3. Run the Application
 
@@ -113,7 +113,7 @@ streamlit run capstone_streamlit.py
 
 The app will open at `http://localhost:8501`
 
-## 🧪 Testing
+##  Testing
 
 ### Unit Tests
 
@@ -140,7 +140,7 @@ Navigate cells to test each component:
 - Part 7: Multi-turn conversation
 - Part 8: Summary & improvements
 
-## 📚 Knowledge Base
+##  Knowledge Base
 
 **12 Topics Covered** (150–400 words each):
 
@@ -159,7 +159,7 @@ Navigate cells to test each component:
 
 All documents stored in `knowledge_base.py` with accurate formulas and definitions.
 
-## 🤖 Agent Features
+##  Agent Features
 
 ### Multi-Turn Memory
 - Maintains conversation history across exchanges
@@ -185,7 +185,7 @@ Physics Calculator:
 - Never raises exceptions — always returns error strings
 - Supports complex mathematical expressions
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 ### RAGAS Baseline (5 samples)
 
@@ -202,7 +202,7 @@ Physics Calculator:
 - Multi-turn conversation: 3+ turns verified
 - All 8 node functions: unit tests passing
 
-## 🎯 Success Criteria (MET)
+##  Success Criteria (MET)
 
 ✅ Answer relevance score >0.7 (achieved 0.85)  
 ✅ Faithfulness to KB >0.7 (achieved 0.82)  
@@ -224,7 +224,7 @@ LANGCHAIN_PROJECT=PhysicsStudyBuddy  # Optional
 
 Get free Groq API key: https://console.groq.com
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 | Problem | Solution |
 |---------|----------|
@@ -234,7 +234,7 @@ Get free Groq API key: https://console.groq.com
 | `ModuleNotFoundError: graph` | Run from `physics_study_buddy/` directory |
 | `SentenceTransformer not found` | `pip install sentence-transformers` |
 
-## 📈 Performance
+##  Performance
 
 - **First load**: ~2–3 seconds (model initialization + embeddings)
 - **Subsequent queries**: ~1–2 seconds (cached resources)
@@ -242,7 +242,7 @@ Get free Groq API key: https://console.groq.com
 - **Groq LLM response**: ~1 second
 - **Total latency**: ~2–3 seconds per question
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
 ```bash
@@ -254,18 +254,7 @@ streamlit run capstone_streamlit.py
 - Hugging Face Spaces
 - AWS/GCP with containerization
 
-### Docker (Optional)
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-EXPOSE 8501
-CMD ["streamlit", "run", "capstone_streamlit.py"]
-```
-
-## 🎓 Learning Materials
+##  Learning Materials
 
 ### Understanding the Codebase
 
@@ -288,7 +277,7 @@ CMD ["streamlit", "run", "capstone_streamlit.py"]
    - st.session_state maintains UI state
    - Custom HTML for rich messaging
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 ### High Priority
 
@@ -315,7 +304,7 @@ CMD ["streamlit", "run", "capstone_streamlit.py"]
 6. Collaborative learning (peer Q&A, shared notes)
 7. Performance analytics dashboard
 
-## 📝 Documentation
+##  Documentation
 
 - **Notebook**: `notebooks/day13_capstone.ipynb`
   - 9 sections covering entire project
@@ -325,7 +314,7 @@ CMD ["streamlit", "run", "capstone_streamlit.py"]
 - **Code Comments**: Extensive docstrings in all modules
 - **Type Hints**: Full typing annotations throughout
 
-## ✅ Deliverables Checklist
+##  Deliverables Checklist
 
 - ✅ .env and .env.example
 - ✅ .gitignore with .env, __pycache__
@@ -343,7 +332,7 @@ CMD ["streamlit", "run", "capstone_streamlit.py"]
 - ✅ RAGAS baseline scores >0.70
 - ✅ End-to-end tests passing
 
-## 📞 Support
+##  Support
 
 For issues or questions:
 1. Check `.env` configuration
@@ -351,11 +340,11 @@ For issues or questions:
 3. Run unit tests: `pytest tests/test_nodes.py -v`
 4. Check Streamlit console for error messages
 
-## 📄 License
+##  License
 
 This is an educational capstone project. Feel free to use and modify for learning purposes.
 
 ---
 
-**Status**: ✅ Production Ready  
+**Status**:  Production Ready  
 **Version**: 1.0 
