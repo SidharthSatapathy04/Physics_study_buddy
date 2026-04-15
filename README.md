@@ -4,11 +4,11 @@
 
 **Physics Study Buddy** is a production-ready Agentic AI system for B.Tech physics tutoring. It combines LangGraph, ChromaDB, Groq LLM, and Streamlit to provide students with:
 
-- ✅ **Concept Retrieval**: answers physics questions using a curated 12-document knowledge base
-- ✅ **Calculation Engine**: safe Python calculator for numerical problem-solving
-- ✅ **Multi-Turn Memory**: maintains conversation context across multiple exchanges
-- ✅ **Faithfulness Evaluation**: LLM-based quality scoring with retry logic
-- ✅ **Streamlit UI**: production-grade dark-themed chat interface
+-  **Concept Retrieval**: answers physics questions using a curated 12-document knowledge base
+-  **Calculation Engine**: safe Python calculator for numerical problem-solving
+-  **Multi-Turn Memory**: maintains conversation context across multiple exchanges
+-  **Faithfulness Evaluation**: LLM-based quality scoring with retry logic
+-  **Streamlit UI**: production-grade dark-themed chat interface
 
 ##  Architecture
 
@@ -191,9 +191,9 @@ Physics Calculator:
 
 | Metric | Score | Target |
 |--------|-------|--------|
-| Faithfulness | 0.82 | >0.70 ✅ |
-| Answer Relevancy | 0.85 | >0.70 ✅ |
-| Context Precision | 0.88 | >0.70 ✅ |
+| Faithfulness | 0.82 | >0.70  |
+| Answer Relevancy | 0.85 | >0.70  |
+| Context Precision | 0.88 | >0.70 |
 
 ### Test Coverage
 
@@ -204,13 +204,13 @@ Physics Calculator:
 
 ##  Success Criteria (MET)
 
-✅ Answer relevance score >0.7 (achieved 0.85)  
-✅ Faithfulness to KB >0.7 (achieved 0.82)  
-✅ Multi-turn conversation memory (verified 4 turns)  
-✅ Accurate routing (retrieve/tool/memory_only)  
-✅ Safe calculator with no code injection  
+ Answer relevance score >0.7 (achieved 0.85)  
+ Faithfulness to KB >0.7 (achieved 0.82)  
+ Multi-turn conversation memory (verified 4 turns)  
+ Accurate routing (retrieve/tool/memory_only)  
+ Safe calculator with no code injection  
 
-## 🔧 Configuration
+##  Configuration
 
 ### Required Environment Variables
 
@@ -316,21 +316,21 @@ streamlit run capstone_streamlit.py
 
 ##  Deliverables Checklist
 
-- ✅ .env and .env.example
-- ✅ .gitignore with .env, __pycache__
-- ✅ requirements.txt (pinned versions)
-- ✅ knowledge_base.py (12 documents)
-- ✅ state.py (TypedDict + constants)
-- ✅ tools.py (calculator + extractor)
-- ✅ prompts.py (4 system prompts)
-- ✅ nodes.py (8 functions tested)
-- ✅ graph.py (compiled graph + ask() helper)
-- ✅ capstone_streamlit.py (full UI)
-- ✅ tests/test_nodes.py (unit tests)
-- ✅ notebooks/day13_capstone.ipynb (9 sections)
-- ✅ Multi-turn memory verified
-- ✅ RAGAS baseline scores >0.70
-- ✅ End-to-end tests passing
+-  .env and .env.example
+-  .gitignore with .env, __pycache__
+-  requirements.txt (pinned versions)
+-  knowledge_base.py (12 documents)
+-  state.py (TypedDict + constants)
+-  tools.py (calculator + extractor)
+-  prompts.py (4 system prompts)
+-  nodes.py (8 functions tested)
+-  graph.py (compiled graph + ask() helper)
+-  capstone_streamlit.py (full UI)
+-  tests/test_nodes.py (unit tests)
+-  notebooks/day13_capstone.ipynb (9 sections)
+-  Multi-turn memory verified
+-  RAGAS baseline scores >0.70
+-  End-to-end tests passing
 
 ##  Support
 
