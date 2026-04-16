@@ -1,4 +1,4 @@
-# Physics Study Buddy — Agentic AI Capstone Project
+# Physics Study Buddy 
 
 ##  Overview
 
